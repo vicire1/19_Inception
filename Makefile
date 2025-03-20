@@ -3,7 +3,7 @@ DATA_PATH = $(HOME)/data
 WP_PATH = $(DATA_PATH)/wordpress
 DB_PATH = $(DATA_PATH)/mariadb
 DOCKER = docker
-DOCKER_COMPOSE = docker-compose -f $(COMPOSE)
+DOCKER_COMPOSE = docker compose -f $(COMPOSE)
 
 GREEN = \033[0;32m
 YELLOW = \033[0;33m
