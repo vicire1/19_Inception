@@ -23,8 +23,6 @@ services:
     container_name: wordpress
     depends_on:
       - mariadb
-    # ports:
-    #   - "9000:9000"
     volumes:
       - wordpress:/var/www/html
     networks:
