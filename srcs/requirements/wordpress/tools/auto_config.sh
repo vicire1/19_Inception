@@ -6,7 +6,7 @@ chown -R www-data:www-data /var/www/html
 chmod -R 755 /var/www/html
 
 cd /var/www/html
-rm -rf /var/www/html/*
+# rm -rf /var/www/html/*
 if [ ! -s "wp-config.php" ]
 then
 
@@ -26,4 +26,4 @@ else
 	echo "Wordpress already installed."
 fi
 
-exec /usr/sbin/php-fpm8.2 -F
+exec /usr/sbin/php-fpm7.4 -F
